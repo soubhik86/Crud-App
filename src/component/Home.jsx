@@ -10,10 +10,14 @@ export const Home = () => {
   };
 
   return (
-    <div className="button-container">
-      <button className="login-button" onClick={handleClick}>
-        Click Here To Login
-      </button>
+    <div className="home-container">
+    <div className="home-content">
+        <h2>Welcome To</h2>
+        <h1>Product Management Interface</h1>
+        <button className="login-button" onClick={handleClick}>
+            Click Here To Login
+        </button>
     </div>
+</div>
   );
 };

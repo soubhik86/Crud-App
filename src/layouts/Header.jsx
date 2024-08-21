@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar bg="primary" data-bs-theme="dark">
         <Container fluid>
           <Navbar.Brand href="#">WTS Academy</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -33,11 +33,12 @@ export const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link className="text-white" href="/">Home</Nav.Link>
               {token && (
                 <>
-                  <Nav.Link href="/">Product List</Nav.Link>
-                  <Nav.Link>{user}</Nav.Link>
+                <Nav.Link className="text-white"  href="/createproduct">Create Product</Nav.Link>
+                  <Nav.Link className="text-white"  href="/productlist">Product List</Nav.Link>
+                  <Nav.Link className="text-white" >{user}</Nav.Link>
                   <img
                     style={{
                       width: "30px",
@@ -50,7 +51,7 @@ export const Header = () => {
                     alt="Profile"
                     className="profile-img"
                   />
-                  <NavDropdown title="Profile" id="navbarScrollingDropdown">
+                  <NavDropdown  title="Profile"   className="text-white" id="navbarScrollingDropdown">
                     <NavDropdown.Item href="#action3">
                       Profile Info
                     </NavDropdown.Item>

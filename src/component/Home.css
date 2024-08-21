@@ -1,21 +1,37 @@
-.button-container {
+body {
+  background-image: url('https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+
+
+.home-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ensure button is vertically centered */
+  height: 100vh;
+  
+}
+
+.home-content {
+  text-align: center;
+  color: white;
+}
+
+h1, h2 {
+  margin: 0;
 }
 
 .login-button {
-  padding: 10px 20px;
   background-color: #007bff;
-  color: #fff;
+  color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s;
-}
-
-.login-button:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 30px;
 }
